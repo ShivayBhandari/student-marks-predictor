@@ -17,7 +17,7 @@ def home():
     return render_template('index.html')
 
 
-@app.route('/', methods=['POST'])
+@app.route('/predict', methods=['POST'])
 def predict():
     global df
 
